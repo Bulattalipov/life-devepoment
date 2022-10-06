@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'CoreSansC-45Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('CoreSansC-45Regular'),
+    url('../fonts/CoreSansC-45Regular.woff2') format('woff2'),
+    url('../fonts/CoreSansC-45Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CoreSansC-55Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('CoreSansC-55Medium'),
+    url('../fonts/CoreSansC-55Medium.woff2') format('woff2'),
+    url('../fonts/CoreSansC-55Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'CoreSansC-65Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CoreSansC-65Bold'),
+    url('../fonts/CoreSansC-65Bold.woff2') format('woff2'),
+    url('../fonts/CoreSansC-65Bold.woff') format('woff');
+  font-display: swap;
+}

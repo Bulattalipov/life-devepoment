@@ -1,0 +1,27 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  color: #fff;
+  @extend %core45Reg;
+  font-size: 16px;
+  line-height: 118%;
+  background-color: #554B4D;
+}
+
+a{
+  color: #fff;
+}
+
+.container{
+  max-width: 1680px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 18px;
+  }
+}

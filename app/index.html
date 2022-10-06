@@ -1,17 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life devepoment</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
-
-
+  <div class="videos slider__video">
+    <div class="videos__item">
+      <div class="videos__black"></div>
+      <video autoplay muted loop>
+        <source src="videos/dog.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="videos__item">
+      <div class="videos__black"></div>
+      <video autoplay muted loop>
+        <source src="videos/flowers.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="Life devepoment">
+          </a>
+        </div>
+        <div class="header__contact">
+          <div class="header__contact-box">
+            <a class="header__contact-tel" href="tel:88002223790">8 800 222-37-90</a>
+            <p class="header__contact-text">
+              Работаем ежедневно с 10:00 до 20:00
+            </p>
+          </div>
+          <a class="header__contact-link" href="tel:88002223790">
+            <img src="images/icons/tel-icon.svg" alt="телефон">
+          </a>
+        </div>
+        <div class="header__right">
+          <nav class="menu">
+            <ul class="menu__items">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Квартиры
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Ипотека
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Коммерция
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  Управляющая компания
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-modal">
+      <nav class="menu-modal__menu">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              Квартиры
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              Ипотека
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              Коммерция
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              Управляющая компания
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-modal__contact">
+        <a class="header__contact-tel" href="tel:88002223790">8 800 222-37-90</a>
+        <p class="header__contact-text">
+          Работаем ежедневно с 10:00 до 20:00
+        </p>
+      </div>
+      <ul class="banner__socials-list">
+        <li class="banner__socials-item">
+          <a class="banner__socials-itemLink" href="#">
+            <img class="banner__socials-itemIcon" src="images/icons/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="banner__socials-item">
+          <a class="banner__socials-itemLink" href="#">
+            <img class="banner__socials-itemIcon" src="images/icons/inst.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="banner__socials-item">
+          <a class="banner__socials-itemLink" href="#">
+            <img class="banner__socials-itemIcon" src="images/icons/twitter.svg" alt="twitter">
+          </a>
+        </li>
+        <li class="banner__socials-item">
+          <a class="banner__socials-itemLink" href="#">
+            <img class="banner__socials-itemIcon" src="images/icons/vk.svg" alt="vkontakte">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="banner">
+      <picture class="banner__logo">
+        <source srcset="images/dom-rf__mini.png" media="(max-width: 992px)">
+        <img src="images/dom-rf.png" alt="Дом РФ">
+      </picture>
+      <div class="container">
+        <div class="banner__wrapper">
+          <div class="banner__socials">
+            <ul class="banner__socials-list">
+              <li class="banner__socials-item">
+                <a class="banner__socials-itemLink" href="#">
+                  <img class="banner__socials-itemIcon" src="images/icons/facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="banner__socials-item">
+                <a class="banner__socials-itemLink" href="#">
+                  <img class="banner__socials-itemIcon" src="images/icons/inst.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="banner__socials-item">
+                <a class="banner__socials-itemLink" href="#">
+                  <img class="banner__socials-itemIcon" src="images/icons/twitter.svg" alt="twitter">
+                </a>
+              </li>
+              <li class="banner__socials-item">
+                <a class="banner__socials-itemLink" href="#">
+                  <img class="banner__socials-itemIcon" src="images/icons/vk.svg" alt="vkontakte">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="banner__tabs">
+            <ul class="banner__tabs-list">
+              <li class="banner__tabs-item">
+                <a href="#">Северный парк</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Ренесанс</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Станция Столичная</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Компасс сити</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Лето</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Бруклин</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Сказочный сад</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Монблан</a>
+              </li>
+              <li class="banner__tabs-item">
+                <a href="#">Краски</a>
+              </li>
+            </ul>
+            <div class="banner__tabs-contents">
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Северный парк
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Ренесанс
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Станция Столичная
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Компасс сити
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Лето
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Бруклин
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Сказочный сад
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Монблан
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+              <div class="banner__tabs-content">
+                <img class="banner__tabs-contentImg" src="images/building.jpg" alt="Здание">
+                <div class="banner__tabs-contentTitle">
+                  Краски
+                </div>
+                <p class="banner__tabs-contentText">
+                  Жилой комплекс небывалого масштаба
+                  с развитой инфраструктурой
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="banner__box">
+            <div class="banner__slider">
+              <div class="banner-slider__item">
+                <h2 class="banner-slider__item-title">
+                  Стильная архитектура и виды из окон будущей квартиры не оставят равнодушных
+                </h2>
+              </div>
+              <div class="banner-slider__item">
+                <h2 class="banner-slider__item-title">
+                  Большие парковые территории и бесопасные дворы созданы для счастливой жизни
+                </h2>
+              </div>
+            </div>
+            <div class="banner-slider__spinner">
+              <progress-ring stroke="1" radius="19" progress="0"></progress-ring>
+            </div>
+            <div class="banner__buttons">
+              <a class="banner__button-choose" href="#">+ Выбрать квартиру</a>
+              <a class="banner__button-buy" href="#">Купить квартиру онлайн ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculator">
+      <div class="container">
+        <div class="calculator__box">
+          <button class="calculator__box-btn" type="button">
+            Подобрать квартиру
+            <img src="images/icons/search.svg" alt="иконка поиска">
+          </button>
+        </div>
+        <form class="calculator__form">
+          <div class="calculator-rooms calculator__item">
+            <p class="calculator__title">
+              Количество комнат
+            </p>
+            <div class="calculator-rooms__items">
+              <label class="calculator-rooms__item">
+                <input class="calculator-rooms__item-input" checked name="room" type="radio">
+                <div class="calculator-rooms__item-text">
+                  студия
+                </div>
+              </label>
+              <label class="calculator-rooms__item">
+                <input class="calculator-rooms__item-input" name="room" type="radio">
+                <div class="calculator-rooms__item-text">
+                  1
+                </div>
+              </label>
+              <label class="calculator-rooms__item">
+                <input class="calculator-rooms__item-input" name="room" type="radio">
+                <div class="calculator-rooms__item-text">
+                  2
+                </div>
+              </label>
+              <label class="calculator-rooms__item">
+                <input class="calculator-rooms__item-input" name="room" type="radio">
+                <div class="calculator-rooms__item-text">
+                  3
+                </div>
+              </label>
+              <label class="calculator-rooms__item">
+                <input class="calculator-rooms__item-input" name="room" type="radio">
+                <div class="calculator-rooms__item-text">
+                  4
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="calculator-square calculator__item">
+            <p class="calculator__title">
+              Площадь
+            </p>
+            <div class="extra-controls">
+              <div class="extra-controls__box">
+                <input type="text" class="js-input-from" value="0" />
+              </div>
+              <div class="extra-controls__box">
+                <input type="text" class="js-input-to" value="0" />
+              </div>
+            </div>
+            <div class="range-slider">
+              <input type="text" class="js-range-slider" value="" />
+            </div>
+          </div>
+          <div class="calculator-price calculator__item">
+            <p class="calculator__title">
+              Стоимость, млн ₽
+            </p>
+            <div class="extra-controls">
+              <div class="extra-controls__box">
+                <input type="text" class="price-input-from" value="0" />
+              </div>
+              <div class="extra-controls__box">
+                <input type="text" class="price-input-to" value="0" />
+              </div>
+            </div>
+            <div class="range-slider">
+              <input type="text" class="price-range-slider" value="" />
+            </div>
+          </div>
+          <div class="calculator-complex calculator__item">
+            <p class="calculator__title">
+              Жилой комплекс
+            </p>
+            <select class="calculator-complex__select">
+              <option value="1">Северный парк</option>
+              <option value="2">Станция Столичная</option>
+              <option value="3">Лето</option>
+              <option value="4">Сказочный сад</option>
+              <option value="5">Краски</option>
+              <option value="6">Ренесанс</option>
+              <option value="7">Компасс сити</option>
+              <option value="8">Бруклин</option>
+              <option value="9">Монблан</option>
+            </select>
+          </div>
+          <div class="calculator-buttons calculator__item">
+            <button class="calculator-buttons__filter" type="button">
+              <img src="images/icons/filter.svg" alt="filter">
+              Еще фильтры
+            </button>
+            <button class="calculator-buttons__button" type="submit">Показать 120 квартир</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,30 @@
+$gray: #9B9A9B;
+
+%core45Reg {
+  font-family: 'CoreSansC-45Regular';
+  font-weight: 400;
+}
+
+%core55Med {
+  font-family: 'CoreSansC-55Medium';
+  font-weight: 500;
+}
+
+%core65Bold {
+  font-family: 'CoreSansC-65Bold';
+  font-weight: 700;
+}
+
+
+%checked-hidden,
+%radio-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
