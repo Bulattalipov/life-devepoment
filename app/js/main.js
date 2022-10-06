@@ -7,7 +7,7 @@
 
       initialShowPage = function () {
         $(tabs).children("div").children("div").hide();
-        $(tabs).children("ul").children("li").removeClass("active");
+        $(tabs).children("ul").children("li").children('a').removeClass("active");
       }
 
       initialShowPage();
@@ -15,25 +15,25 @@
       showPage = function (i) {
         $(tabs).children("div").children("div").hide();
         $(tabs).children("div").children("div").eq(i).show();
-        $(tabs).children("ul").children("li").removeClass("active");
-        $(tabs).children("ul").children("li").eq(i).addClass("active");
+        $(tabs).children("ul").children("li").children('a').removeClass("active");
+        $(tabs).children("ul").children("li").children('a').eq(i).addClass("active");
       }
 
       noShowPage = function () {
         $(tabs).children("div").children("div").hide();
-        $(tabs).children("ul").children("li").removeClass("active");
+        $(tabs).children("ul").children("li").children('a').removeClass("active");
       }
 
-      $(tabs).children("ul").children("li").each(function (index, element) {
+      $(tabs).children("ul").children("li").children('a').each(function (index, element) {
         $(element).attr("data-page", i);
         i++;
       });
 
-      $(tabs).children("ul").children("li").mouseenter(function () {
+      $(tabs).children("ul").children("li").children('a').mouseenter(function () {
         showPage(parseInt($(this).attr("data-page")));
       });
 
-      $(tabs).children("ul").children("li").mouseleave(function () {
+      $(tabs).children("ul").children("li").children('a').mouseleave(function () {
         noShowPage();
       });
     };

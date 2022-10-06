@@ -162,9 +162,26 @@ video {
 
 
   &:hover {
+    animation: rotateBtn ease-in-out .3s;
+  }
+}
+
+@keyframes rotateBtn {
+  from {
+    transform: translateY(0px) rotateX(0deg);
+  }
+
+  50%{
     transform: translateY(-10px) rotateX(90deg);
-    top: -10px;
-    transition: all 1s;
+    opacity: 0;
+  }
+
+  95%{
+    opacity: 1;
+  }
+
+  to{
+    transform: translateY(0px) rotateX(0deg);
   }
 }
 
@@ -204,6 +221,7 @@ video {
       top: 0px;
       transition: all .3s;
       background-color: #fa5154;
+      animation: none;
     }
   }
 
@@ -515,11 +533,11 @@ video {
   align-items: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
-  overflow: hidden;
 
   @media (max-width: 768px) {
     max-height: 0vh;
     padding-top: 35px;
+    overflow: hidden;
 
     &.active{
       max-height: 100%;
